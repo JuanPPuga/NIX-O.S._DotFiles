@@ -4,7 +4,7 @@ Bienvenido a esta guía de **instalación y configuración** de **NixOS**. Aquí
 
 ---
 
-## 📜 ¿Qué es NixOS?
+## 🐧💻 ¿Qué es NixOS?
 NixOS es una distribución de Linux basada en el **gestor de paquetes Nix**, lo que permite una configuración **declarativa y reproducible**. Ideal para quienes buscan estabilidad y control total sobre su entorno.
 
 🔹 **Ventajas de NixOS**
@@ -124,5 +124,3 @@ nixos-rebuild switch
 Ahora tienes NixOS instalado y listo para personalizar a tu gusto. Su enfoque declarativo te permitirá mantener un sistema limpio y eficiente. 🚀
 
 Si tienes dudas o quieres explorar más configuraciones, revisa la [documentación oficial](https://nixos.org).
-
-📢 ¡Que disfrutes tu nueva experiencia con NixOS! 💻🐧
