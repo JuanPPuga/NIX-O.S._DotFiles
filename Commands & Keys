@@ -1,0 +1,42 @@
+| Atajo de Tecla / Comando         | Función                                                     |
+|----------------------------------|-------------------------------------------------------------|
+| `Ctrl + Alt + F1-F6`             | Cambiar entre terminales virtuales (TTY)                    |
+| `Ctrl + Alt + F7`                | Volver a la interfaz gráfica                                |
+| `Ctrl + C`                       | Detener proceso en ejecución                                |
+| `Ctrl + Z`                       | Pausar proceso y enviarlo a segundo plano                   |
+| `fg`                             | Restaurar un proceso pausado                                |
+| `bg`                             | Continuar un proceso en segundo plano                       |
+| `Ctrl + Shift + C`               | Copiar texto en terminal                                    |
+| `Ctrl + Shift + V`               | Pegar texto en terminal                                     |
+| `Ctrl + X`                       | Cortar texto                                                |
+| `Ctrl + C`                       | Copiar texto                                                |
+| `Ctrl + V`                       | Pegar texto                                                 |
+| `WIN + P`                        | Habrir Runner de programas                                  |
+| `WIN + D`                        | Mostrar el escritorio                                       |
+| `WIN + E`                        | Abrir el explorador de archivos                             |
+| `WIN + L`                        | Bloquear la pantalla                                        |
+| `WIN + R`                        | Abrir "Ejecutar"                                            |
+| `WIN + X`                        | Abrir el menú de herramientas avanzadas                     |
+| `nixos-rebuild switch`           | Aplica cambios y reinicia los servicios                     |
+| `nixos-rebuild boot`             | Aplica cambios y reinicia el sistema en el próximo arranque |
+| `nixos-rebuild test`             | Aplica cambios sin reiniciar                                |
+| `nixos-rebuild dry-run`          | Muestra cambios sin aplicarlos                              |
+| `nix-env -iA nixpkgs.<paquete>`  | Instala un paquete                                          |
+| `nix-env -e <paquete>`           | Elimina un paquete                                          |
+| `nix-channel --update`           | Actualiza los canales de NixOS                              |
+| `nix-shell -p <paquete>`         | Crea un entorno temporal con un paquete                     |
+| `nix-collect-garbage -d`         | Elimina datos innecesarios                                  |
+| `nix-store --gc`                 | Ejecuta recolección de basura en el almacén de Nix          |
+| `nix-shell`                      | Abre un entorno interactivo con dependencias específicas    |
+| `nixos-rebuild switch`           | Aplica cambios y reinicia los servicios                     |
+| `nixos-rebuild boot`             | Aplica cambios y reinicia el sistema en el próximo arranque |
+| `nixos-rebuild test`             | Aplica cambios sin reiniciar                                |
+| `nixos-rebuild dry-run`          | Muestra cambios sin aplicarlos                              |
+| `nix-env -iA nixpkgs.<paquete>`  | Instala un paquete                                          |
+| `nix-env -e <paquete>`           | Elimina un paquete                                          |
+| `nix-channel --update`           | Actualiza los canales de NixOS                              |
+| `nix-shell -p <paquete>`         | Crea un entorno temporal con un paquete                     |
+| `nix-collect-garbage -d`         | Elimina datos innecesarios                                  |
+| `nix-store --gc`                 | Ejecuta recolección de basura en el almacén de Nix          |
+| `nix-shell`                      | Abre un entorno interactivo con dependencias específicas    |
+|----------------------------------|-------------------------------------------------------------|
