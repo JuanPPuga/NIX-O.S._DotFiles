@@ -4,14 +4,13 @@
 
 ## 📝 Tareas pendientes
 
-- [ ] Agregar nueva sección sobre [tema relevante]
-- [ ] Revisar enlaces y referencias
-- [ ] Mejorar estructura y formato
+- [ ] Revisar la sección "/etc/nixos/Configuration.nix", contiene problemas en NVim.
+- [ ] Arreglar sitema de Audio de Bocinas y Jack. (Sección de Configuración y Graficos).
+- [ ] Revisar el apartado: "/etc/nixos/Hardware.nix", posibilidad de arreglo de Audio.
 
 ## 🏆 Logros recientes
 
-- ✅ Sección de documentación completada
-- ✅ Implementación de mejoras de código
+- ✅ Reparación y entendimiento de NIX-OS.
 
 📌 **Consejo:** Usa _commit messages_ descriptivos para mantener un historial claro de cambios.
 
