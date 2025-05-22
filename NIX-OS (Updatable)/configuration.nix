@@ -92,6 +92,7 @@
     dejavu_fonts
     nerd-fonts.jetbrains-mono
     fira-code
+    nerd-fonts.shure-tech-mono
   ];
   security.pam.services.swaylock = { };
   services.printing.enable = true;
