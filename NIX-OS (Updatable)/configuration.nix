@@ -17,6 +17,7 @@
     ./graphics.nix
     ./home-config.nix
   ];
+  
   hardware.bluetooth.enable = true; # enables support for bluetooth
   hardware.bluetooth.powerOnBoot = false; # powers up the default Bluetooth controller on boot
 
@@ -39,6 +40,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
   networking.useDHCP = false;
+  
   systemd.network = {
     enable = true;
     networks = {
@@ -95,8 +97,10 @@
     fira-code
     nerd-fonts.shure-tech-mono
   ];
+
   security.pam.services.swaylock = { };
   services.printing.enable = true;
+
   services.avahi = {
     enable = true;
     nssmdns4 = true;
@@ -106,6 +110,7 @@
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
+  
   # programs.gnupg.agent = {
   #   enable = true;
   #   enableSSHSupport = true;
@@ -119,18 +124,22 @@
     enable = true;
     enableSSHSupport = true;
   };
+  
   services.pcscd.enable = true;
   xdg.portal.configPackages = with pkgs; [ niri ];
+  
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
       xdg-desktop-portal-gnome
     ];
   };
+  
   programs.dconf.enable = true;
   services.gvfs.enable = true;
   services.flatpak.enable = true;
   security.rtkit.enable = true;
+  
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -139,6 +148,7 @@
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
   };
+  
   services.pipewire.wireplumber.extraConfig."10-bluez" = {
     "monitor.bluez.properties" = {
       "bluez5.enable-sbc-xq" = true;
@@ -152,6 +162,7 @@
       ];
     };
   };
+
   # Open ports in the firewall.
   networking.firewall.allowedTCPPorts = [
     58396
@@ -159,10 +170,12 @@
     53317
     12345
   ];
+
   networking.firewall.allowedUDPPorts = [
     631
     53317
   ];
+
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
@@ -172,8 +185,15 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
+
   system.stateVersion = "24.11"; # Did you read the comment?
   programs.bash.promptInit = ''
     PS1='\[\e[0m\][\[\e[1;36m\]\u\[\e[0m\]@\[\e[1;36m\]\h\[\e[0m\] \W]\$ '
   '';
+  
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+  hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+  services.logind.lidSwitchExternalPower = "ignore";
+  services.logind.lidSwitch = "ignore";
+  services.upower.enable = true;
 }
