@@ -51,9 +51,4 @@
   networking.useDHCP = lib.mkDefault false;
   # networking.interfaces.wlo1.useDHCP = lib.mkDefault true;
 
-  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
-  services.logind.lidSwitchExternalPower = "ignore";
-  services.logind.lidSwitch = "ignore";
-  services.upower.enable = true;
 }
