@@ -5,7 +5,8 @@
 ## 📝 Tareas pendientes
 
 - [ ] Arreglar sitema de Audio de Bocinas y Jack. (Sección de Configuración y Graficos).
-- [ ] Reparar BootLoader con compatibilidad de Windows 11 y Nix-OS. (Urgente)
+- [ ] Reparar BootLoader con compatibilidad de Windows 11 y Nix-OS. (Urgente).
+- [ ] Reparar problemas con disco, (Compatibilidad entre Win11 y Nix-OS, Win no actualizable).
 
 ## 🏆 Logros recientes / Actualizaciones de Configuracion.
 
@@ -17,7 +18,4 @@
 ---
 
 📌 **Consejo:** Usa _commit messages_ descriptivos para mantener un historial claro de cambios.
-
----
-
 💡 **Actualiza estas notas regularmente para mantener toda la información al día!** 🚀
