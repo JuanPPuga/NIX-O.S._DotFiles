@@ -4,13 +4,17 @@
 
 ## 📝 Tareas pendientes
 
-- [ ] Revisar la sección "/etc/nixos/Configuration.nix", contiene problemas en NVim.
 - [ ] Arreglar sitema de Audio de Bocinas y Jack. (Sección de Configuración y Graficos).
-- [ ] Revisar el apartado: "/etc/nixos/Hardware.nix", posibilidad de arreglo de Audio.
+- [ ] Reparar BootLoader con compatibilidad de Windows 11 y Nix-OS. (Urgente)
 
-## 🏆 Logros recientes
+## 🏆 Logros recientes / Actualizaciones de Configuracion.
 
-- ✅ Reparación y entendimiento de NIX-OS.
+- ✅ Lista de Paquetes o "Pakages.nix" Actualizado.
+- ✅ Se a agregado por parte de ayuda VS-Code.
+- ✅ Re-Escritura de codigo para mejor lectura y agregado de comentarios.
+- ✅ Eliminaciones en Doble-Escritura en "Hardware-Configuration.nix".
+
+---
 
 📌 **Consejo:** Usa _commit messages_ descriptivos para mantener un historial claro de cambios.
 
