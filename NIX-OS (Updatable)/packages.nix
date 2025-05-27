@@ -79,6 +79,8 @@ in
     waypaper
     ripdrag
     ouch
+    vscode
+    jftui
 
     dock-script
     undock-script
