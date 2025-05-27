@@ -4,6 +4,7 @@
   lib,
   ...
 }:
+
 let
   dock-script = pkgs.writeShellScriptBin "dock-sh" ''
     niri msg output eDP-1 off
@@ -41,11 +42,13 @@ let
   '';
 in
 {
+  
+  # Lista de Paquetes descargados por medio de paquetes; (Buscar por parte de Guia o Wiki de Nix-OS).
   environment.systemPackages = with pkgs; [
     git
     niri
-    neovim
-    firefox
+    neovim # Editor de Consola
+    firefox # Navegador Principal
     xfce.thunar
     xfce.thunar-volman
     gvfs
@@ -79,13 +82,14 @@ in
     waypaper
     ripdrag
     ouch
-    vscode
+    vscode # Importante de Visual Studio Code (Empresarial)
     jftui
 
     dock-script
     undock-script
     firefox-sync
   ];
+
   systemd.user.services.firefox-profile-memory-cache = {
     description = "Firefox profile memory cache";
     wantedBy = [ "default.target" ];
