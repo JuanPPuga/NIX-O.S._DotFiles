@@ -1,0 +1,10 @@
+| Funcion de Atajo                 | Directorio o Seccion                                        |
+|----------------------------------|-------------------------------------------------------------|
+| Acceso a Configuraciones         | sudo nvim /etc/nixos/configuration.nix                      |
+| Acceso a Aspectos Graficos       | sudo nvim /etc/nixos/graphics.nix                           |
+| Acceso a Configuracion Fisica    | sudo nvim /etc/nixos/hardware-configuration.nix (No Mover)  |
+| Acceso a Configuracion "Home"    | sudo nvim /etc/nixos/home-config.nix                        |
+| Acceso a Programas Instalados    | sudo nvim /etc/nixos/packages.nix                           |
+|----------------------------------|-------------------------------------------------------------|
+| Configuracion de NIRI            | sudo nvim /etc/nixos/configs/config.kdl                     |
+|----------------------------------|-------------------------------------------------------------|
