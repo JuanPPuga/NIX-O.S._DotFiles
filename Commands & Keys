@@ -4,20 +4,24 @@
 | `Ctrl + Alt + F7`                | Volver a la interfaz gráfica                                |
 | `fg`                             | Restaurar un proceso pausado                                |
 | `bg`                             | Continuar un proceso en segundo plano                       |
+|----------------------------------|-------------------------------------------------------------|
 | `Ctrl + Shift + C`               | Copiar texto en terminal                                    |
 | `Ctrl + Shift + V`               | Pegar texto en terminal                                     |
 | `Ctrl + X`                       | Cortar texto                                                |
 | `Ctrl + C`                       | Copiar texto                                                |
 | `Ctrl + V`                       | Pegar texto                                                 |
 | `Ctrl + Z`                       | Pausar proceso y enviarlo a segundo plano                   |
+|----------------------------------|-------------------------------------------------------------|
 | `WIN + P`                        | Habrir Runner de programas                                  |
 | `WIN + D`                        | Mostrar el escritorio                                       |
 | `WIN + E`                        | Abrir el explorador de archivos                             |
 | `WIN + L`                        | Bloquear la pantalla                                        |
 | `WIN + R`                        | Abrir "Ejecutar"                                            |
 | `WIN + X`                        | Abrir el menú de herramientas avanzadas                     |
+|----------------------------------|-------------------------------------------------------------|
 | `"+y`                            | Copiar y Mandar al Portapapeles desde la terminal           |
 | `ggGV`                           | Comando para copiar de pie a cabeza de la terminal          |
+|----------------------------------|-------------------------------------------------------------|
 | `nixos-rebuild switch`           | Aplica cambios y reinicia los servicios                     |
 | `nixos-rebuild boot`             | Aplica cambios y reinicia el sistema en el próximo arranque |
 | `nixos-rebuild test`             | Aplica cambios sin reiniciar                                |
