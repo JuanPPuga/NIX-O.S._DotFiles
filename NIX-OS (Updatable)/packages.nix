@@ -4,7 +4,6 @@
   lib,
   ...
 }:
-
 let
   dock-script = pkgs.writeShellScriptBin "dock-sh" ''
     niri msg output eDP-1 off
@@ -42,54 +41,48 @@ let
   '';
 in
 {
-  
-  # Lista de Paquetes descargados por medio de paquetes; (Buscar por parte de Guia o Wiki de Nix-OS).
   environment.systemPackages = with pkgs; [
     git
     niri
-    neovim # Editor de Consola
-    firefox # Navegador Principal
-    xfce.thunar
-    xfce.thunar-volman
-    gvfs
-    pipewire
-    libreoffice
-    hunspell
-    hunspellDicts.es_MX
-    hunspellDicts.en_US
-    eww
-    jq
-    jaq
-    swww
-    xwayland-satellite
-    htop
-    pwvucontrol
-    nomacs
-    wl-clipboard
-    qalculate-gtk
-    gnome-themes-extra
-    lazygit
-    grim
-    swaylock
-    bluetuith
+    neovim
+    firefox # Navegador Predeterminado de NIX-OS.
+    xfce.thunar # Explorador de Archivos.
+    xfce.thunar-volman # Leer dispositivos extraibles.
+    gvfs # (Gnome Virtual Files System) - Permite leer dispositivos (Extraibles o Red).
+    pipewire # Audio XD
+    eww # Barra de Tareas.
+    jq # Parseador de json.
+    jaq # Parseador de json en rust.
+    swww # fondos de Pantalla.
+    xwayland-satellite # compatibilidad de Programas Antiguos.
+    htop # Administrador de Tareas.
+    pwvucontrol # Gestor de Audio.
+    nomacs # Visualizador de Fotos.
+    wl-clipboard # Acceder al portapapeles.
+    qalculate-gtk # Calculadora Mamalona.
+    gnome-themes-extra # Tema principal de NIX-OS.
+    lazygit # Interfaz grafica para GIT.
+    grim # Sleccionar una region de una pantalla.
+    swaylock # Bloqueo de Pantalla.
+    bluetuith # Gestor de Bluetooth.
 
-    wl-mirror
-    _7zz
-    gnupg
-    pinentry-tty
-    apple-cursor
+    wl-mirror # Permite hacer un mirror en segundo monitor.
+    _7zz # 7-Zip.
+    gnupg # Firmar Commits en GIT.
+    pinentry-tty # Poner password de llave GPG.
+    apple-cursor # Cursor Copypaste de MAC.
     nautilus # Needed for gtk4 FileChooserNative
-    waypaper
-    ripdrag
-    ouch
-    vscode # Importante de Visual Studio Code (Empresarial)
-    jftui
+    ripdrag # Permite Drag&Drop en YAZI.
+    ouch # Descompresion de Archivos en YAZI.
+    vscode #Importe de Visual Studio Code (Empresarial)
+    jftui #Revisar!
 
     dock-script
     undock-script
-    firefox-sync
+    firefox-sync # Sincronizacion de cuenta de Firefox.
   ];
 
+  # Crea un Slot para guardar la sincronizacion de FireFox.
   systemd.user.services.firefox-profile-memory-cache = {
     description = "Firefox profile memory cache";
     wantedBy = [ "default.target" ];
