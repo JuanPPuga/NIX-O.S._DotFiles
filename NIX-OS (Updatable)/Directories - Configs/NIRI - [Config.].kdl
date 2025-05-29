@@ -30,7 +30,7 @@ layout {
         width 3
         /* Color de Ventana Activa */
         active-color "#Fb7e14"
-/* Color de Ventana Inactiva */
+        /* Color de Ventana Inactiva */
         inactive-color "#121212"
     }
 
