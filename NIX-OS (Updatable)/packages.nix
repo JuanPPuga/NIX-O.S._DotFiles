@@ -72,6 +72,7 @@ in
     pinentry-tty # Poner password de llave GPG.
     apple-cursor # Cursor Copypaste de MAC.
     nautilus # Needed for gtk4 FileChooserNative
+    waypaper # NO BORRAR (Fondo de Pantallas).
     ripdrag # Permite Drag&Drop en YAZI.
     ouch # Descompresion de Archivos en YAZI.
     vscode #Importe de Visual Studio Code (Empresarial)
