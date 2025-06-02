@@ -42,14 +42,16 @@ let
 in
 {
   environment.systemPackages = with pkgs; [
-    git
-    niri
-    neovim
+    git # GIT
+    niri # Gestor de Ventanas.
+    neovim #Editor Principal de Neo Vim.
     firefox # Navegador Predeterminado de NIX-OS.
     xfce.thunar # Explorador de Archivos.
+    grub2
+    dislocker
     xfce.thunar-volman # Leer dispositivos extraibles.
     gvfs # (Gnome Virtual Files System) - Permite leer dispositivos (Extraibles o Red).
-    pipewire # Audio XD
+    pipewire # Audio XD.
     eww # Barra de Tareas.
     jq # Parseador de json.
     jaq # Parseador de json en rust.
@@ -72,11 +74,11 @@ in
     pinentry-tty # Poner password de llave GPG.
     apple-cursor # Cursor Copypaste de MAC.
     nautilus # Needed for gtk4 FileChooserNative
-    waypaper # NO BORRAR (Fondo de Pantallas).
+    waypaper # NO BORRAR
     ripdrag # Permite Drag&Drop en YAZI.
     ouch # Descompresion de Archivos en YAZI.
     vscode #Importe de Visual Studio Code (Empresarial)
-    jftui #Revisar!
+    jftui #JellyFin Pagina de Anime.
 
     dock-script
     undock-script
