@@ -39,6 +39,7 @@
 
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
   services.desktopManager.plasma6.enable = true;
 
   # Configure keymap in X11
@@ -80,24 +81,39 @@
     ];
   };
 
-  # Aquí van tus demás configuraciones
+  # Install STEAM.
   nixpkgs.config.allowUnfree = true;
   programs.steam.enable = true;
-  hardware.graphics.enable = true;
-  hardware.graphics.enable32Bit = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamemode.enable = true;
 
   # Install firefox.
   programs.firefox.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+
+
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  #  Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
+
+  #LibreOffice: Paquete/Spell/ESP
     libreoffice-qt
     hunspell
     hunspellDicts.es_ES
+
+  protonup-ng #Asset - Steam Linux Tools
+  vim #vim - Editor
+  kdePackages.kdeplasma-addons #KDE - Plasma
+  vlc #VLC Media Player
+
   ];
+  # Proton GE Tools for STEAM
+  environment.sessionVariables = {
+    STEAM_EXTRA_COMPACT_TOOLS_PATCHS =
+      "/home/user/.steam/root/compatibilitytools.d";
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
