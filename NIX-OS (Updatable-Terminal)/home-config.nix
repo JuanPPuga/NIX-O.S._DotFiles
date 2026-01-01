@@ -26,7 +26,7 @@ in
     home.stateVersion = "24.11";
     # Here goes the rest of your home-manager config, e.g. home.packages = [ pkgs.foo ];
 
-    # Programs
+    # Programs:
     programs.bash.enable = true;
     programs.foot.enable = true;
     programs.mpv.enable = true;
