@@ -47,7 +47,7 @@ in
     neovim #Editor Principal de Neo Vim.
     firefox # Navegador Predeterminado de NIX-OS.
     xfce.thunar # Explorador de Archivos.
-    grub2
+    grub2 # Selector de Sistemas (Caso de grub y niri)
     dislocker
     xfce.thunar-volman # Leer dispositivos extraibles.
     gvfs # (Gnome Virtual Files System) - Permite leer dispositivos (Extraibles o Red).
