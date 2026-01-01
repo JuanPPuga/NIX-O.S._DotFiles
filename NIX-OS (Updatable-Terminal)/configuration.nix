@@ -97,6 +97,9 @@
 
   # Search on WIKI
   fonts.packages = with pkgs; [
+    (google-fonts.override {
+     fonts = ["Share Tech"];
+    })
     noto-fonts
     noto-fonts-cjk-sans
     liberation_ttf
