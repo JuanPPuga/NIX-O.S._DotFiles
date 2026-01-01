@@ -48,8 +48,23 @@
     variant = "";
   };
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
+  #Servicios de Impresora HP - Ink Tank 315.
+    services.printing = {
+    enable = true;
+    drivers = [
+      pkgs.hplip
+    ];
+  };
+
+  services.avahi = {
+    enable = true;
+    nssmdns = true;
+  };
+
+  # MUY IMPORTANTE para HP USB
+  hardware.printers = {
+    ensurePrinters = [];
+  };
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
@@ -93,20 +108,23 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 
-
   environment.systemPackages = with pkgs; [
   #  Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
 
-  #LibreOffice: Paquete/Spell/ESP
-    libreoffice-qt
-    hunspell
-    hunspellDicts.es_ES
+  #Correcion de Video [STEAM]
+    ffmpeg-full
+    gst_all_1.gstreamer
+    gst_all_1.gst-plugins-base
+    gst_all_1.gst-plugins-good
+    gst_all_1.gst-plugins-bad
+    gst_all_1.gst-plugins-ugly
 
   protonup-ng #Asset - Steam Linux Tools
   vim #vim - Editor
   kdePackages.kdeplasma-addons #KDE - Plasma
   vlc #VLC Media Player
+  ntfs3g # NTFS
 
   ];
   # Proton GE Tools for STEAM
