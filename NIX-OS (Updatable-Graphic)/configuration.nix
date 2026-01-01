@@ -82,6 +82,13 @@
     #media-session.enable = true;
   };
 
+  # Fonts: Pkgs:
+  fonts.packages = with pkgs; [
+    (google-fonts.override {
+     fonts = ["Share Tech"];
+     })
+  ];
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
