@@ -1,3 +1,5 @@
+# This file is only for graphical Cards and config.
+
 {
   config,
   pkgs,
