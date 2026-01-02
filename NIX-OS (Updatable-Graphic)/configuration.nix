@@ -131,7 +131,7 @@
   vim #vim - Editor
   kdePackages.kdeplasma-addons #KDE - Plasma
   vlc #VLC Media Player
-  ntfs3g # NTFS
+  pdfarranger #Editor de PDF's
 
   ];
   # Proton GE Tools for STEAM
