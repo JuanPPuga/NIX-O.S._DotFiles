@@ -34,5 +34,5 @@
 | `nix-store --gc`                 | Ejecuta recolección de basura en el almacén de Nix          |
 | `nix-shell`                      | Abre un entorno interactivo con dependencias específicas    |
 |----------------------------------|-------------------------------------------------------------|
-| `mount -t ntfs-3g /dev/sda1 /mnt`| Montar disco(s) manualmente si tienen NTFS                 |
+| `mount -t ntfs-3g /dev/sda1 /mnt`| Montar disco(s) manualmente si tienen NTFS                  |
 |----------------------------------|-------------------------------------------------------------|
