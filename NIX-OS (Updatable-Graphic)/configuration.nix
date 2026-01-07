@@ -26,6 +26,7 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  networking.networkmanager.wifi.powersave = false; # Disable SleepMode of WIFI-Card.
 
   # Set your time zone.
   time.timeZone = "America/Mexico_City";
