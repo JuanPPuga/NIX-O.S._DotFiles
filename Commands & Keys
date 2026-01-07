@@ -1,3 +1,4 @@
+|----------------------------------|-------------------------------------------------------------|
 | Atajo de Tecla / Comando         | Función                                                     |
 |----------------------------------|-------------------------------------------------------------|
 | `Ctrl + Alt + F1-F6`             | Cambiar entre terminales virtuales (TTY)                    |
@@ -19,10 +20,11 @@
 | `WIN + R`                        | Abrir "Ejecutar"                                            |
 | `WIN + X`                        | Abrir el menú de herramientas avanzadas                     |
 |----------------------------------|-------------------------------------------------------------|
-| `"+y`                            | Copiar y Mandar al Portapapeles desde la terminal           |
-| `ggGV`                           | Comando para copiar de pie a cabeza de la terminal          |
+| `"+y`                            | Copiar y Mandar al Portapapeles desde la terminal (VIM)     |
+| `ggGV`                           | Comando para copiar de pie a cabeza de la terminal (VIM)    |
 |----------------------------------|-------------------------------------------------------------|
-| `nixos-rebuild switch`           | Aplica cambios y reinicia los servicios                     |
+| Comandos para Sistema Config.    | Función (sudo)                                              |
+|----------------------------------|-------------------------------------------------------------|
 | `nixos-rebuild boot`             | Aplica cambios y reinicia el sistema en el próximo arranque |
 | `nixos-rebuild test`             | Aplica cambios sin reiniciar                                |
 | `nixos-rebuild dry-run`          | Muestra cambios sin aplicarlos                              |
@@ -30,9 +32,13 @@
 | `nix-env -e <paquete>`           | Elimina un paquete                                          |
 | `nix-channel --update`           | Actualiza los canales de NixOS                              |
 | `nix-shell -p <paquete>`         | Crea un entorno temporal con un paquete                     |
-| `nix-collect-garbage -d`         | Elimina datos innecesarios                                  |
 | `nix-store --gc`                 | Ejecuta recolección de basura en el almacén de Nix          |
 | `nix-shell`                      | Abre un entorno interactivo con dependencias específicas    |
 |----------------------------------|-------------------------------------------------------------|
+| Comandos para Externos           | Función                                                     |
+|----------------------------------|-------------------------------------------------------------|
 | `mount -t ntfs-3g /dev/sda1 /mnt`| Montar disco(s) manualmente si tienen NTFS                  |
+|----------------------------------|-------------------------------------------------------------|
+| `nix-collect-garbage -d`         | Elimina datos innecesarios                                  |
+| `nixos-rebuild switch`           | Aplica cambios y reinicia los servicios                     |
 |----------------------------------|-------------------------------------------------------------|
