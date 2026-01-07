@@ -90,7 +90,6 @@ nixos-install
 ```sh
 reboot
 ```
-✔️ ¡Tu NixOS está listo y funcionando! 🎉
 
 ---
 
