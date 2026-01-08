@@ -10,8 +10,17 @@
       ./hardware-configuration.nix
     ];
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
+  hardware.bluetooth.enable = true; # Enable support for Bluetooth
+  hardware.bluetooth.powerOnBoot = false; # Deft. PW:UP BT ctrl on boot
+
+  # Bootloader. [Use of GRUB]
+  # boot.loader.systemd-boot.enable = false;
+  boot.loader.grub = {
+    enable = true;
+    efiSupport = true;
+    device = "nodev" #UEFI
+    useOSProber = true; #Detector OS
+  }
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
@@ -49,7 +58,7 @@
     variant = "";
   };
 
-  #Servicios de Impresora HP - Ink Tank 315.
+  #Services of HP
     services.printing = {
     enable = true;
     drivers = [
@@ -62,7 +71,7 @@
     nssmdns4 = true;
   };
 
-  # MUY IMPORTANTE para HP USB
+  # For USB port - HP Printers
   hardware.printers = {
     ensurePrinters = [];
   };
