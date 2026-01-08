@@ -10,6 +10,19 @@
       ./hardware-configuration.nix
     ];
 
+<<<<<<< HEAD
+  hardware.bluetooth.enable = true; # Enable support for Bluetooth
+  hardware.bluetooth.powerOnBoot = false; # Deft. PW:UP BT ctrl on boot
+
+  # Bootloader. [Use of GRUB]
+  # boot.loader.systemd-boot.enable = false;
+  boot.loader.grub = {
+    enable = true;
+    efiSupport = true;
+    device = "nodev"; #UEFI
+    useOSProber = true; #Detector OS
+  };
+=======
   hardware.bluetooth.enable = true; # Enable support for Bluetooth
   hardware.bluetooth.powerOnBoot = false; # Deft. PW:UP BT ctrl on boot
 
@@ -20,7 +33,8 @@
     efiSupport = true;
     device = "nodev" #UEFI
     useOSProber = true; #Detector OS
-  }
+  };
+>>>>>>> 200ff7d0d29a98105729a6c96337f64e9269e911
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
@@ -125,6 +139,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 
+  boot.supportedFilesystems = [ "ntfs" ];
+
   environment.systemPackages = with pkgs; [
   #  Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
@@ -142,6 +158,7 @@
   kdePackages.kdeplasma-addons #KDE - Plasma
   vlc #VLC Media Player
   pdfarranger #Editor de PDF's
+  ntfs3g # Help NTFS Data
 
   ];
   # Proton GE Tools for STEAM
