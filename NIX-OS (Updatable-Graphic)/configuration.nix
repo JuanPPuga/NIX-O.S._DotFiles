@@ -2,13 +2,12 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, lib, ... }:
+{ config, pkgs, ... }:
 
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./packages.nix
     ];
 
   hardware.bluetooth.enable = true; # Enable support for Bluetooth
@@ -19,9 +18,9 @@
   boot.loader.grub = {
     enable = true;
     efiSupport = true;
-    device = "nodev" #UEFI
+    device = "nodev"; #UEFI
     useOSProber = true; #Detector OS
-  }
+  };
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
@@ -126,6 +125,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 
+  boot.supportedFilesystems = [ "ntfs" ];
+
   environment.systemPackages = with pkgs; [
   #  Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
@@ -143,6 +144,7 @@
   kdePackages.kdeplasma-addons #KDE - Plasma
   vlc #VLC Media Player
   pdfarranger #Editor de PDF's
+  ntfs3g # Help NTFS Data
 
   ];
   # Proton GE Tools for STEAM
