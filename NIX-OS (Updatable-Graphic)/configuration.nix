@@ -13,6 +13,8 @@
   hardware.bluetooth.enable = true; # Enable support for Bluetooth
   hardware.bluetooth.powerOnBoot = false; # Deft. PW:UP BT ctrl on boot
 
+  boot.supportedFilesystems = [ "ntfs" ]; # Compatibility NFTS
+
   # Bootloader. [Use of GRUB]
   # boot.loader.systemd-boot.enable = false;
   boot.loader.grub = {
@@ -124,8 +126,6 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-
-  boot.supportedFilesystems = [ "ntfs" ];
 
   environment.systemPackages = with pkgs; [
   #  Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
