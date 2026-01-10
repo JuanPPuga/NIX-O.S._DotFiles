@@ -1,4 +1,4 @@
-## ¿Qué es NixOS? (Ver. 24.00 - 25.11)
+## ¿Qué es NixOS? (Ver. 24.11 - 25.11)
 NixOS es una distribución de Linux basada en el **gestor de paquetes Nix**, lo que permite una configuración **declarativa y reproducible**. Ideal para quienes buscan estabilidad y control total sobre su entorno.
 
 🔹 **Ventajas de NixOS**
