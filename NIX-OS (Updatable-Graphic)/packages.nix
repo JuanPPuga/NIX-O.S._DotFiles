@@ -1,0 +1,28 @@
+{ pkgs, ... }:
+
+{
+  environment.systemPackages = with pkgs; [
+    # Do not forget to add an editor to edit configuration.nix!
+    # The Nano editor is also installed by default.
+    # List packages installed in system profile. To search, run:
+    # $ nix search wget
+
+    #wget
+
+    #Correcion de Video [STEAM]
+    ffmpeg-full
+    gst_all_1.gstreamer
+    gst_all_1.gst-plugins-base
+    gst_all_1.gst-plugins-good
+    gst_all_1.gst-plugins-bad
+    gst_all_1.gst-plugins-ugly
+
+    protonup-ng #Asset - Steam Linux Tools
+    vim #vim - Editor
+    kdePackages.kdeplasma-addons #KDE - Plasma
+    vlc #VLC Media Player
+    pdfarranger #Editor de PDF's
+    ntfs3g # Help NTFS Data
+
+  ];
+}
