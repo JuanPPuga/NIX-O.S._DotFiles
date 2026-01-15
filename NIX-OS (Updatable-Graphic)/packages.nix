@@ -18,7 +18,7 @@
     gst_all_1.gst-plugins-ugly
 
     protonup-ng #Asset - Steam Linux Tools
-    vim #vim - Editor
+    vim #vim-Editor
     kdePackages.kdeplasma-addons #KDE - Plasma
     vlc #VLC Media Player
     pdfarranger #Editor de PDF's
