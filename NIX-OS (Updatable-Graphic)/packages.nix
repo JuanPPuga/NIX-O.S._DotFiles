@@ -24,7 +24,6 @@
     pdfarranger #Editor de PDF's
     ntfs3g # Help NTFS Data
     qalculate-gtk # Calculadora Mamalona.
-
   ];
   
     # Proton GE Tools for STEAM:

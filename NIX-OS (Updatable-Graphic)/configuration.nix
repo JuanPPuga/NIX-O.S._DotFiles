@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./printers-configuration.nix
       ./packages.nix
     ];
 
@@ -61,24 +62,6 @@
     variant = "";
   };
 
-  #Services of HP
-    services.printing = {
-    enable = true;
-    drivers = [
-      pkgs.hplip
-    ];
-  };
-
-  services.avahi = {
-    enable = true;
-    nssmdns4 = true;
-  };
-
-  # For USB port - HP Printers
-  hardware.printers = {
-    ensurePrinters = [];
-  };
-
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -99,7 +82,7 @@
   fonts.packages = with pkgs; [
     (google-fonts.override {
      fonts = ["Share Tech"];
-     })
+    })
   ];
 
   # Enable touchpad support (enabled default in most desktopManager).
