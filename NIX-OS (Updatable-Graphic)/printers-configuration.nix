@@ -2,7 +2,7 @@
 
 {
   #Printer-Services: HP.
-    services.printing = {
+  services.printing = {
     enable = true;
     drivers = [
       pkgs.hplip
