@@ -124,12 +124,6 @@
   # Install firefox.
   programs.firefox.enable = true;
 
-  # Proton GE Tools for STEAM
-  environment.sessionVariables = {
-    STEAM_EXTRA_COMPACT_TOOLS_PATCHS =
-      "/home/user/.steam/root/compatibilitytools.d";
-  };
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
