@@ -23,6 +23,12 @@
     vlc #VLC Media Player
     pdfarranger #Editor de PDF's
     ntfs3g # Help NTFS Data
+    qalculate-gtk # Calculadora Mamalona.
 
   ];
+  
+    # Proton GE Tools for STEAM:
+  environment.sessionVariables = {
+    STEAM_EXTRA_COMPACT_TOOLS_PATCHS = "/home/user/.steam/root/compatibilitytools.d";
+  };
 }
