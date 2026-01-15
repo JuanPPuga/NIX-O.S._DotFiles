@@ -31,4 +31,14 @@
   environment.sessionVariables = {
     STEAM_EXTRA_COMPACT_TOOLS_PATCHS = "/home/user/.steam/root/compatibilitytools.d";
   };
+
+  # Install STEAM.
+  nixpkgs.config.allowUnfree = true;
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamemode.enable = true;
+
+  # Install firefox.
+  programs.firefox.enable = true;
+
 }
