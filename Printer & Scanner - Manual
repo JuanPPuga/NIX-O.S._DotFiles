@@ -1,8 +1,0 @@
-|----------------------------------|-------------------------------------------------------------|
-|Guia de NIXOS para Scanner e Impresora    |-------------------------------------------------------------|
-|----------------------------------|-------------------------------------------------------------|
-Para comenzar, NIXOS utiliza configuraciones que enlazan el uso de la impresora mediante WIFI o USB,
-ya que no se incluye automáticamente. La configuración ya está completa en [printers-configuration.nix],
-lo que explica de manera sencilla cómo vincular las funciones de la impresora. En otra sección de [packages.nix],
-la sección #3 contiene los paquetes utilizados para el escáner y la impresora, incluyendo el uso de “Simple-Scan”,
-aunque también se puede usar directamente desde la consola.
