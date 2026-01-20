@@ -1,5 +1,5 @@
 |----------------------------------|-------------------------------------------------------------|
-|Guia de NIXOS para Scanner e Impresora  |-----------------------------------------------------|
+|Guia de NIXOS para Scanner e Impresora    |-------------------------------------------------------------|
 |----------------------------------|-------------------------------------------------------------|
 Para comenzar, NIXOS utiliza configuraciones que enlazan el uso de la impresora mediante WIFI o USB,
 ya que no se incluye automáticamente. La configuración ya está completa en [printers-configuration.nix],
