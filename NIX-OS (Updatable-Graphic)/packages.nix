@@ -24,8 +24,18 @@
     pdfarranger #Editor de PDF's
     ntfs3g # Help NTFS Data
     qalculate-gtk # Calculadora Mamalona.
+
+    simple-scan #Scanner KDE
+    hplip #HP Linux Imaging and Printing.
+    hplipWithPlugin #hplip with plugins from HP.
+    sane-backends #Linux - Scanner Drivers.
+    usbutils #Dienostic Tools (USB).
+
   ];
   
+    #SANE:
+  hardware.sane.enable = true;
+
     # Proton GE Tools for STEAM:
   environment.sessionVariables = {
     STEAM_EXTRA_COMPACT_TOOLS_PATCHS = "/home/user/.steam/root/compatibilitytools.d";
