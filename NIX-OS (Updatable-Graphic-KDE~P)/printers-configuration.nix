@@ -1,3 +1,5 @@
+# This document is strictly dedicated to printer settings.
+
 { config, pkgs, ... }:
 
 {
