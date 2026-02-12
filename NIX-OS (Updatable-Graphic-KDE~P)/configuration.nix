@@ -15,7 +15,7 @@
   hardware.bluetooth.enable = true; # Enable support for Bluetooth
   hardware.bluetooth.powerOnBoot = false; # Deft. PW:UP BT ctrl on boot
 
-  boot.supportedFilesystems = [ "ntfs" ]; # Compatibility NFTS
+  boot.supportedFilesystems = [ "ntfs" ]; # Compatibility NFTS devices
 
   # Bootloader. [Use of GRUB]
   # boot.loader.systemd-boot.enable = false;
