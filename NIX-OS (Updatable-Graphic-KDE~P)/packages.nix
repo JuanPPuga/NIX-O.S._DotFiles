@@ -31,6 +31,8 @@
     sane-backends #Linux - Scanner Drivers.
     usbutils #Dienostic Tools (USB).
 
+    # libreoffice # Stable LibreOffice
+
   ];
   
     #SANE:
